@@ -1,0 +1,20 @@
+*{
+  margin:20px;
+  padding: 0;
+  
+}
+.content {
+  display: flex;
+  gap: 10px;
+}
+.box-left{
+  text-align: start;
+  width: 20%;
+}
+.box-right{
+  align-items: center;
+  width: 75%;
+}
+.heroes-menu{
+  
+}

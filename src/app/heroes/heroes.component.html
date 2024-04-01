@@ -1,0 +1,24 @@
+<h2>My Heroes</h2>
+
+<!-- <div>
+  <label for="new-hero">Hero name: </label>
+  <input id="new-hero" #heroName />
+  <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+    Add hero
+  </button>
+</div> -->
+
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <img routerLink="/detail/{{hero.id}}" src={{hero.img}} alt="">
+    <div class="low-text">
+      <a routerLink="/detail/{{hero.id}}">
+        <span>id : {{hero.id}}</span> 
+        <span>{{hero.name}}</span>
+        <span class="text-red">{{hero.price}}$</span>
+      </a>
+    </div>
+    <!-- <button type="button" class="delete" title="delete hero"
+      (click)="delete(hero)">x</button> -->
+  </li>
+</ul>

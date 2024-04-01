@@ -1,0 +1,32 @@
+*{
+  margin: auto;
+  padding: 0;
+}
+.head{
+  background-color:#11A0CF ;
+  margin: -8px -8px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  position: fixed;
+  top: 0;
+}
+.head img{
+  margin: 5px 50px;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  padding: 10px 0;
+}
+.head nav{
+  display: flex;
+  align-items: center;
+}
+.head nav a{
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: monospace;
+  color: white;
+  font-size: larger;
+}
+.content{
+}
