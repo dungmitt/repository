@@ -1,31 +1,4 @@
-<h2 class="title">hero detail</h2>
+<h2 class="title" *ngIf="hero">{{hero.name}}</h2>
 <div class="content" *ngIf="hero">
-  <div class="box-right">
-    <img src="{{hero.img}}" alt>
-  </div>
-  <div class="box-left">
-    <h2>{{hero.name | uppercase}}</h2>
-    <div >
-      <span>id:{{hero.id}} </span><br>
-      <span>nick name: {{hero.name}}</span><br>
-      <span class="text-red">{{hero.price}}$</span><br>
-    </div>
-
-    <pre>
-  &lt;!DOCTYPE html&gt;
-  &lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-      &lt;meta charset=&quot;UTF-8&quot;&gt;
-      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-      &lt;title&gt;Trang web này để lừa đảo&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;h1&gt;Chia sẻ , like , subscrie , donate mạnh tay&lt;/h1&gt;
-  &lt;p&gt;đoạn này thực sự low text ....&lt;/p&gt;
-  &lt;{{hero.name}} biến hình &gt; 
-  &lt;/body&gt;
-  &lt;/html&gt;
-    </pre>
-  </div>
-  
+  <img src="{{hero.img}}" alt>
 </div>

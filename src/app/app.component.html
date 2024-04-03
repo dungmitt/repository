@@ -7,24 +7,34 @@
 </head>
 <body>
   <div class="head">
-    <img routerLink="/" src="https://dothethao.net.vn/wp-content/uploads/2020/06/logo-manchester-united.png"
+    <img routerLink="/" src="../assets/images/logo.webp"
        alt>
     <!-- <h3 class="title" routerLink="/">{{title}}</h3> -->
     <nav>
-      <a routerLink="/dashboard">Dashboard</a>
-      <a routerLink="/heroes">Heroes</a>
-      <a href="">contact</a>
-      <a href="">support</a>
-      <app-hero-search></app-hero-search>
+      <a routerLink="/dashboard">nhân vật</a>
+      <a routerLink="/heroes">đội</a>
+      <a href="/star">Stars</a>
+      <a href="">TCG</a>
+      <a href="">Leaderboards</a>
+      <a href="">Tools</a>
+      <a href="">Tierlist</a>
+      <a href="">Banners</a>
+      <a href="">Wiki</a>
+      <!-- <app-hero-search></app-hero-search> -->
     </nav>
-    <nav>
-      <a href="">sign up</a>
-      <a href="">sign in</a>
+    <nav class="user">
+      <a href="/sign-up">sign up</a>
+      <a href="/sign-in">sign in</a>
     </nav>
   </div>
-  <div class="content">
+  <div class="main">
     <router-outlet></router-outlet>
+    <footer>
+      <ul>
+        <li><a href="">Genshin Buidler</a></li>
+      </ul>
+    </footer>
   </div>
-  <!-- <app-messages></app-messages> -->
+
 </body>
 </html>

@@ -1,0 +1,58 @@
+
+<form (ngSubmit)="onHandelSubmit()" class="form-group">
+    <h1>Thêm mới nhân vật</h1>
+    <div role="alert" *ngIf="showSuccessAlert">
+        Thêm nhân vật thành công!
+    </div>
+    <div class="mb-3">
+        <input type="text" name="name" class="form-control"
+            placeholder="name charater" [(ngModel)]="hero.name" minlength="3">
+    </div>
+    <div class="mb-3">
+        <input type="text" name="img" class="form-control"
+            placeholder="url images" [(ngModel)]="hero.img">
+    </div>
+    <div class="box-option">
+        <div class="option-left">
+            <div class="mb-3">
+                <div>
+                    <label>Sao</label>
+                </div>
+                <select class="star" (change)="onStarChange($event)">
+                    <option *ngFor="let star of stars"
+                        value="{{star.id}}">{{star.star}}</option>
+                </select>
+            </div>
+            <div class=" mb-3">
+                <div>
+                    <label>Vũ khí</label>
+                </div>
+                <select class="weapon" (change)="onWeaponChange($event)">
+                    <option *ngFor="let weapon of weapons"
+                        value="{{weapon.id}}">{{weapon.name}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="option-right">
+            <div class="mb-3">
+                <div>
+                    <label for="inputGroupSelect02">Nguyên tố</label>
+                </div>
+                <select class="element" (change)="onElementChange($event)">
+                    <option *ngFor="let element of elements"
+                        value="{{element.id}}">{{element.name}}</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <div>
+                    <label for="inputGroupSelect02">Thành phố</label>
+                </div>
+                <select class="city" (change)="onCityChange($event)">
+                    <option *ngFor="let city of citys"
+                        value="{{city.id}}">{{city.name}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <button type="submit">Thêm mới </button>
+</form>

@@ -1,0 +1,203 @@
+{
+  "hero": [
+    {
+      "id": "1",
+      "name": " heizou",
+      "img": "./assets/images/heizou.jpg",
+      "starId": "4",
+      "weaponId": "3",
+      "elementId": "3",
+      "city": "inazuma"
+    },
+    {
+      "id": "2",
+      "name": " kazuha",
+      "img": "./assets/images/kazuha.jpg",
+      "starId": "5",
+      "weaponId": "3",
+      "elementId": "3",
+      "city": "inazuma",
+      "cityId": "3"
+    },
+    {
+      "id": "3",
+      "name": " lynette",
+      "img": "./assets/images/lynette.jpg",
+      "starId": "4",
+      "weaponId": "4",
+      "elementId": "5",
+      "city": "fontaine",
+      "cityId": "5"
+    },
+    {
+      "id": "4",
+      "name": " sayu",
+      "img": "./assets/images/sayu.jpg",
+      "starId": "4",
+      "weaponId": "2",
+      "elementId": "3",
+      "city": "inazuma",
+      "cityId": "3"
+    },
+    {
+      "id": "6",
+      "name": " venti",
+      "img": "./assets/images/venti.jpg",
+      "starId": "5",
+      "weaponId": "4",
+      "elementId": "3",
+      "city": "mondstadt"
+    },
+    {
+      "id": "7",
+      "name": " sucrose",
+      "img": "./assets/images/sucrose.jpg",
+      "starId": "4",
+      "weaponId": "4",
+      "elementId": "3",
+      "city": "mondstadt"
+    },
+    {
+      "id": "8",
+      "name": " wanderer",
+      "img": "./assets/images/wanderer.jpg",
+      "starId": "5",
+      "weaponId": "4",
+      "elementId": "3",
+      "city": "sumeru",
+      "cityId": "4"
+    },
+    {
+      "id": "9",
+      "name": " xianyun",
+      "img": "./assets/images/xianyun.jpg",
+      "starId": "5",
+      "weaponId": "4",
+      "elementId": "3",
+      "city": "liyue",
+      "cityId": "2"
+    },
+    {
+      "id": "1232",
+      "name": "xiao",
+      "img": "./assets/images/xiao.jpg",
+      "starId": "5",
+      "weaponId": "4",
+      "elementId": "3",
+      "cityId": "3"
+    }
+  ],
+  "star": [
+    {
+      "id": "1",
+      "star": 1
+    },
+    {
+      "id": "2",
+      "star": 2
+    },
+    {
+      "id": "3",
+      "star": 3
+    },
+    {
+      "id": "4",
+      "star": 4
+    },
+    {
+      "id": "5",
+      "star": 5
+    }
+  ],
+  "user": [],
+  "account": [],
+  "weapons": [
+    {
+      "id": "1",
+      "name": "Cánh thiên không",
+      "starId": 5
+    },
+    {
+      "id": "2",
+      "name": "Thương thiên không",
+      "starId": 5
+    },
+    {
+      "id": "3",
+      "name": "Kiếm thiên không",
+      "starId": 5
+    },
+    {
+      "id": "4",
+      "name": "Tây phong mật điển",
+      "starId": 4
+    }
+  ],
+  "element": [
+    {
+      "id": "1",
+      "name": "nham",
+      "url": "./assets/images/element/nham.webp"
+    },
+    {
+      "id": "2",
+      "name": "thảo",
+      "url": "./assets/images/element/thao.webp"
+    },
+    {
+      "id": "3",
+      "name": "phong",
+      "url": "./assets/images/element/phong.webp"
+    },
+    {
+      "id": "4",
+      "name": "lôi",
+      "url": "./assets/images/element/loi.webp"
+    },
+    {
+      "id": "5",
+      "name": "thủy",
+      "url": "./assets/images/element/thuy.webp"
+    },
+    {
+      "id": "6",
+      "name": "hỏa",
+      "url": "./assets/images/element/hpa.webp"
+    },
+    {
+      "id": "7",
+      "name": "băng",
+      "url": "./assets/images/element/bang.webp"
+    }
+  ],
+  "city": [
+    {
+      "id": "1",
+      "name": "Mondstadt"
+    },
+    {
+      "id": "2",
+      "name": "Liyue"
+    },
+    {
+      "id": "3",
+      "name": "Inazuma"
+    },
+    {
+      "id": "4",
+      "name": "Sumeru"
+    },
+    {
+      "id": "5",
+      "name": "Fontaine"
+    },
+    {
+      "id": "6",
+      "name": "Natlan "
+    },
+    {
+      "id": "7",
+      "name": "Snezhnaya"
+    }
+  ]
+}

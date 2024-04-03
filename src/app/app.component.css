@@ -1,19 +1,17 @@
 *{
-  margin: auto;
+  margin: 0;
   padding: 0;
 }
 .head{
-  background-color:#11A0CF ;
-  margin: -8px -8px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  position: fixed;
-  top: 0;
+  background-color:#212431 ;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  justify-content: space-around;
+
 }
 .head img{
   margin: 5px 50px;
-  width: 35px;
-  height: 35px;
   object-fit: cover;
   padding: 10px 0;
 }
@@ -22,9 +20,19 @@
   align-items: center;
 }
 .head nav a{
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
   font-family: monospace;
   color: white;
   font-size: larger;
+}
+.main {
+  background-color: #1A1D27;
+  padding-top: 40px;
+}
+footer{
+  margin-top: 5%;
+  background-color:#232633;
+  width: 100%;
+  height: 200px;
 }

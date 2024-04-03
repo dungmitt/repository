@@ -1,10 +1,11 @@
-<div id="search-component">
-    <input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="seach" />  
+<div id="search-component" >
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="seach for a charater" />  
     <!-- <ul class="search-result">
       <li *ngFor="let hero of heroes$ | async" >
         <a routerLink="/detail/{{hero.id}}">
           {{hero.name}}
         </a>
       </li>
-    </ul> -->
+    </ul> --> <button routerLink="/admin/add" >thêm mới</button>
   </div>
+ 

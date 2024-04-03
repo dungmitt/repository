@@ -1,9 +1,9 @@
 import { FormsModule } from '@angular/forms';
-import { Hero } from '../hero';
 import {Component, Input} from '@angular/core';
 import { Location, NgIf, UpperCasePipe } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { HeroService } from '../services/hero.service';
+import { IHero } from '../hero';
 @Component({
   selector: 'app-hero-detail',
   templateUrl: './hero-detail.component.html',
@@ -11,7 +11,7 @@ import { HeroService } from '../services/hero.service';
 })
 
 export class HeroDetailComponent {
-  hero: Hero | undefined;
+  hero: IHero | undefined;
   constructor(
     private route : ActivatedRoute,
     private heroService : HeroService,

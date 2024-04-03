@@ -5,14 +5,15 @@
 h2{
     text-align: center;
     margin: 20px;
+    color: white;
+    text-align: center;
 }
-ul li a {
+.heroes li a {
     text-decoration: none;
     
 }
-ul li{
-    width: 250px;
-    height: 220px;
+.heroes li{
+    position: relative;
     background-color: #E4E8E9;
     margin:20px;
     display: flex;
@@ -20,25 +21,67 @@ ul li{
     list-style: none;
     border: 1px #E4E8E9 solid;
     border-radius: 10px ;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
 }
 .heroes{
+    border-radius: 15px;
+    background-color: #232734;
     justify-items: center;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(9, minmax(0, 1fr));
 }
-img{
-    border-radius: 10px;
+.heroes li .highimg{
+    transition: transform 0.3s ease;
     width: 100%;
-    height: 160px;
+    border-radius: 50%;
+}
+.heroes li .highimg:hover{
+    transform: scale(1.1);
+}
+.element {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 30px;
+}
+.element li a img {
+    background-color: #374151;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+li .lowimg{
+    background-color: #655C59;
+    position: absolute;
+    top: 17%;
+    right: 15%;
+    height: 20px;
     object-fit: cover;
+    border-radius: 50%;
 }
-.low-text a{
-    color: black;
-    padding-top: 2px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.element li {
+    list-style: none;
 }
-.text-red{
-    color:red;
+button{
+    margin: auto;
+}
+button {
+    color: white;
+    padding-top:1.5px ;
+    padding-left: 7px;
+    padding-bottom: 1.5px;
+    padding-right: 7px;
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    left: 42%;
+    bottom:1%;
+    position: absolute;
 }

@@ -1,24 +1,36 @@
-<h2>My Heroes</h2>
-
-<!-- <div>
-  <label for="new-hero">Hero name: </label>
-  <input id="new-hero" #heroName />
-  <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
-    Add hero
-  </button>
-</div> -->
-
-<ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <img routerLink="/detail/{{hero.id}}" src={{hero.img}} alt="">
-    <div class="low-text">
-      <a routerLink="/detail/{{hero.id}}">
-        <span>id : {{hero.id}}</span> 
-        <span>{{hero.name}}</span>
-        <span class="text-red">{{hero.price}}$</span>
-      </a>
-    </div>
-    <!-- <button type="button" class="delete" title="delete hero"
-      (click)="delete(hero)">x</button> -->
+<h2>Nhân vật </h2>
+<ul class="element">
+  <li>
+    <a href="">
+      <img src="../../assets/images/element/nham.webp" alt="">
+    </a>
+    <a href="">
+      <img src="../../assets/images/element/bang.webp" alt="">
+    </a>
+    <a href="">
+      <img src="../../assets/images/element/hoa.webp" alt="">
+    </a>
+    <a href="">
+      <img src="../../assets/images/element/loi.webp" alt="">
+    </a>
+    <a href="">
+      <img src="../../assets/images/element/phong.webp" alt="">
+    </a>
+    <a href="">
+      <img src="../../assets/images/element/thao.webp" alt="">
+    </a>
+    <a href="">
+      <img src="../../assets/images/element/thuy.webp" alt="">
+    </a>
+  </li>
+  <app-hero-search>
+  </app-hero-search>
+  
+</ul>
+<ul class="heroes" >
+  <li class="" *ngFor="let hero of heroes, let i = index ">
+    <img class="highimg" routerLink="/admin/{{hero.id}}/update" src={{hero.img}} alt="">
+      <img class="lowimg" src={{url[i]}} alt="">
+      <button (click)="onRemove(hero.id)">x</button>
   </li>
 </ul>
